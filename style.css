@@ -1,0 +1,80 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; 
+    background-color: #000000; 
+}
+
+/* Basic container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+/* Link styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form input styling */
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.mt-3 {
+    margin-top: 30px;
+}
+
+/* Example section styling */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
