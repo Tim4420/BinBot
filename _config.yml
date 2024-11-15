@@ -1,0 +1,2 @@
+exclude:
+  - yolov9/README.md
