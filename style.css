@@ -7,8 +7,8 @@
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
-    color: #FFFFFF; 
-    background-color: #000000; 
+    color: #000; 
+    background-color: #ffffff; 
 }
 
 /* Basic container styling */
@@ -20,7 +20,7 @@ html, body {
 
 /* Headings styling */
 h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF;
+    color: #000;
     margin-bottom: 100px;
 }
 
@@ -77,4 +77,10 @@ input, textarea, select {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 100%; /* Full-width */
+    height: 100%; /* Full-height */
+    object-fit: cover; /* Ensures the image covers the banner area */
 }
