@@ -80,7 +80,7 @@ input, textarea, select {
 }
 
 .banner img {
-    width: 100%; 
+    width: 70%; 
     height: 10%; 
     object-fit: cover; 
 }
