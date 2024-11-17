@@ -27,7 +27,13 @@ function captureFrame() {
             method: 'POST',
             body: formData
         }).then(response => response.json()).then(data => {
-            resultText.textContent = `Type: ${data.type}, Bin: ${data.bin}`;
+            if (data && data.predictions && data.predictions.length > 0) {
+                const prediction = data.predictions[0];
+                const type = prediction.class;
+                resultText.textContent = `Detected: ${type}`;
+            } else {
+                resultText.textContent = "No trash detected or invalid response.";
+            }
         }).catch(err => {
             console.error("Error sending frame to the backend:", err);
             resultText.textContent = "Error detecting trash. Try again.";
