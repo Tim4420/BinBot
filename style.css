@@ -1,5 +1,5 @@
 * {
-    margin: 10;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,23 +8,20 @@ html, body {
     height: 100%;
     font-family: Arial, sans-serif;
     color: #000; 
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
-/* Basic container styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Headings styling */
 h1, h2, h3, h4, h5, h6 {
     color: #000;
     margin-bottom: 100px;
 }
 
-/* Link styling */
 a {
     color: #007BFF;
     text-decoration: none;
@@ -33,7 +30,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Button styling */
+
 button {
     padding: 10px 15px;
     border: none;
@@ -46,7 +43,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Form input styling */
+
 input, textarea, select {
     padding: 10px;
     border: 1px solid #ccc;
@@ -55,7 +52,7 @@ input, textarea, select {
     margin-bottom: 15px;
 }
 
-/* Utility classes */
+
 .text-center {
     text-align: center;
 }
@@ -70,7 +67,6 @@ input, textarea, select {
     margin-top: 30px;
 }
 
-/* Example section styling */
 .section {
     margin: 20px 0;
     padding: 20px;
@@ -83,4 +79,25 @@ input, textarea, select {
     width: 100%; 
     height: 20vh; 
     object-fit: cover; 
+}
+#webcam {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+#capture {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultText {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
 }

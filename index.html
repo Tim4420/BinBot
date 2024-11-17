@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>   
         <meta charset="utf-8">
@@ -11,9 +7,15 @@
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=3">
     </head>
-    <body>
+    <body>  
         <div class="banner">
             <img src="https://raw.githubusercontent.com/Tim4420/BinBot/refs/heads/master/BinbotLogo.jpg" alt="Website banner containing BinBot."></img>
+        </div>
+        <div class="Camera">
+            <video id="webcam" autoplay></video>
+            <button id="capture">Detect Trash!</button>
+            <p id="resultText">Click the detect trash button!</p>
+            <script src="webcamScript.js"></script>
 
         </div>
 
