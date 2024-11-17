@@ -39,7 +39,6 @@ function captureFrame() {
         });
     });
 }
-
 captureButton.addEventListener('click', captureFrame);
 
 startWebcam();
