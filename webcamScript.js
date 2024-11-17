@@ -27,6 +27,7 @@ function captureFrame() {
             method: 'POST',
             body: formData
         }).then(response => response.json()).then(data => {
+            console.log("API Response:", data);
             if (data && data.predictions && data.predictions.length > 0) {
                 const prediction = data.predictions[0];
                 const type = prediction.class;
