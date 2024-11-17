@@ -101,25 +101,30 @@ input, textarea, select {
     font-size: 18px;
     margin-top: 20px;
 }
+
 body.dark-mode {
     background-color: #121212;
     color: white;
 }
 
-#capture.dark-mode {
-    background-color: #3e8e41;
+body.dark-mode button {
+    background-color: #333; 
+    color: white;
 }
 
-#capture.dark-mode:hover {
-    background-color: #45a049;
+body.dark-mode button:hover {
+    background-color: #555; 
 }
 
-/* Dark mode toggle button */
+body.dark-mode .banner img {
+    filter: brightness(0.8); 
+}
+
 #darkModeToggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 15px;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
     background-color: #333;
     color: white;
     border: none;
