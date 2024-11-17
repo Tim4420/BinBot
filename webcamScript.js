@@ -27,13 +27,11 @@ function captureFrame() {
             method: 'POST',
             body: formData
         }).then(response => response.json()).then(data => {
-            console.log("API Response:", data);
-            if (data && data.predictions && data.predictions.length > 0) {
+            if (data.predictions && data.predictions.length > 0) {
                 const prediction = data.predictions[0];
-                const type = prediction.class;
-                resultText.textContent = `Detected: ${type}`;
+                resultText.textContent = `Class: ${prediction.class}, Confidence: ${prediction.confidence.toFixed(2)}`;
             } else {
-                resultText.textContent = "No trash detected or invalid response.";
+                resultText.textContent = "No trash detected.";
             }
         }).catch(err => {
             console.error("Error sending frame to the backend:", err);
@@ -43,4 +41,5 @@ function captureFrame() {
 }
 
 captureButton.addEventListener('click', captureFrame);
+
 startWebcam();
